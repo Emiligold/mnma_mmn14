@@ -73,6 +73,9 @@ public class TestDHeap {
             System.out.println("Exchanges for size " + arrays[i].length + " : " + dHeap.getExchangeCount());
 //            printArray("sorted", arrays[i]);
         }
+        
+        System.out.println("Total comparsions for d = " + d + ": " + totalComparsions);
+        System.out.println("Total exchanges for d = " + d + ": " + totalExchanges);
     }
 
     /**
