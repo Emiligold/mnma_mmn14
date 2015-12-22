@@ -64,11 +64,19 @@ public class DHeap {
             // Increase number of comparison
             ComparisonCount++;
 
-            // Make sure child index is legal (Within our heapsize) and compare values between parent and child
-            if ((childIndex != null) && (currArray[childIndex - 1] > currArray[largest - 1]))
+            // Make sure child index is legal (Within our heapsize)
+            if (childIndex != null)
             {
-                largest = childIndex;
+                // Increase number of comparison
+                ComparisonCount++;
+            	
+            	// Compare values between parent and child
+            	if (currArray[childIndex - 1] > currArray[largest - 1])
+            	{
+            		largest = childIndex;
+            	}
             }
+
         }
 
         // Check if we need to exchange values
